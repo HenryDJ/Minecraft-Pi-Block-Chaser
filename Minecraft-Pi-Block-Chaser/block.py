@@ -52,6 +52,6 @@ while True: # A forever loop
         if not mc.getBlock(blockX, blockY, blockZ) == air and not mc.getBlock(blockX, blockY, blockZ) == 95:
             blockType = mc.getBlock(blockX, blockY, blockZ)
         
-    # Checks if the x and z are more or less than the blockX and blockZ and adjusts them accordingly.
+    # Checks if the x, y and z are more or less than the blockX, blockY and blockZ and adjusts them accordingly.
     mc.setBlock(blockX, blockY, blockZ, blockType)
     time.sleep(1 / blockSpeed)
